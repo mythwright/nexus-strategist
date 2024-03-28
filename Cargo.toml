@@ -1,0 +1,19 @@
+[package]
+name = "nexus-strategist"
+version = "0.0.1"
+edition = "2021"
+authors = ["Zyian"]
+description = "Inspired by Know Thy Enemy, allows you to get an idea of the enemy squad's composition."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+name = "nexus_strategist"
+
+[dependencies]
+arcdps = { git = "https://github.com/zerthox/arcdps-rs" }
+
+[dependencies.nexus]
+git = "https://github.com/Zerthox/nexus-rs.git"
+rev = "fad2c8cfc1aa646b32d68b80858a6323375a95b8"
